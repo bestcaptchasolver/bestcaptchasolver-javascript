@@ -1,0 +1,31 @@
+{
+  "name": "bestcaptchasolver-client",
+  "version": "1.0.0",
+  "description": "Bypass image captcha and reCAPTCHA with bestcaptchasolver service, JS library",
+  "main": "lib/bestcaptchasolver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "captcha",
+    "bypasscaptcha",
+    "decaptcher",
+    "decaptcha",
+    "2captcha",
+    "deathbycaptcha",
+    "anticaptcha",
+    "bypass recaptcha v2",
+    "bypass no captcha recaptcha",
+    "bypass invisible recaptcha",
+    "captcha services for recaptcha v2",
+    "recaptcha v2 captcha solver",
+    "google recaptcha solver",
+    "recaptcha solver python",
+    "recaptcha bypass script"
+  ],
+  "author": "bestcaptchasolver",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
