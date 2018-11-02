@@ -1,5 +1,5 @@
 // check dashboard for accesskey
-const ACCESS_KEY = '76A0CBD91760484E84C11F9FDF0184C6';
+const ACCESS_KEY = 'BAC21DFA5FE5415CA9608BED45F8D703';
 var in_solving = false;
 
 function example() {
@@ -46,6 +46,8 @@ function example() {
         console.log('recaptcha data', data);
         // --------------------------------------
         log('Recaptcha response: ' + data.gresponse);
+        //log('Proxy status: ' + data.proxy_status);
+
     // Set captcha bad
     // ---------------
     //     return bestcaptchasolverapi.set_captcha_bad(captcha_id);

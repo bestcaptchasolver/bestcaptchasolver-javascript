@@ -80,6 +80,8 @@ bestcaptchasolverapi.retrieve_captcha(id);
 
 This method returns an object, with the `text` attribute for image captcha or `gresponse` if submission was done for reCAPTCHA
 
+The returned object also contains a `proxy_status` attribute, which will tell if any proxy was used in completion, and if not, why
+
 **Affiliate ID**
 
 ```javascript
@@ -91,6 +93,7 @@ bestcaptchasolverapi.set_affiliate_id('ID of affiliate from /account');
 ```javascript
 bestcaptchasolverapi.set_captcha_bad(captcha_id);
 ```
+
 
 ## Examples
 Check the example/example.html
