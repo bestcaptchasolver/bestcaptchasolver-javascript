@@ -48,6 +48,7 @@ There's the `case_sensitive` parameter as well, which is optional, and by defaul
 bestcaptchasolverapi.submit_captcha({
     b64image: captcha,
     //case_sensitive: true,
+    //affiliate_id: 'ID of affiliate'       // optional
 });
 ```
 
@@ -64,6 +65,7 @@ bestcaptchasolverapi.submit_recaptcha({
     //type: '1', // 1 - normal, 2 - invisible, 3 - v3
     //v3_action: '',   // v3 action
     //v3_min_score: '0.3', // if v3, score to target
+    //affiliate_id: 'ID of affiliate'       // optional
 });
 ```
 
@@ -80,12 +82,11 @@ bestcaptchasolverapi.retrieve_captcha(id);
 
 This method returns an object, with the `text` attribute for image captcha or `gresponse` if submission was done for reCAPTCHA
 
-The returned object also contains a `proxy_status` attribute, which will tell if any proxy was used in completion, and if not, why
-
-**Affiliate ID**
+**If submitted with proxy, get proxy status**
 
 ```javascript
-bestcaptchasolverapi.set_affiliate_id('ID of affiliate from /account');
+log('Recaptcha response: ' + data.gresponse);
+log('Proxy status: ' + data.proxy_status);
 ```
 
 **Set captcha bad**

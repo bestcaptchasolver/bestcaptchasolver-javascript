@@ -10,8 +10,6 @@ function example() {
     document.getElementById('log').value = '';
 
     bestcaptchasolverapi.set_access_token(ACCESS_KEY);
-    // using affiliate ID
-    //bestcaptchasolverapi.set_affiliate_id('ID of affiliate from /account');
 
     // balance
     bestcaptchasolverapi.account_balance().then(function (balance) {
@@ -22,6 +20,7 @@ function example() {
         return bestcaptchasolverapi.submit_captcha({
             b64image: captcha,
             //case_sensitive: true,
+            //affiliate_id: 'ID of affiliate'       // optional
         });
     }).then(function (id) {
         log('Got ID ' + id + ', waiting for completion ...');
@@ -32,11 +31,12 @@ function example() {
         return bestcaptchasolverapi.submit_recaptcha({
             page_url: 'bestcaptchasolver.com',
             site_key: '6LfGJmcUAAAAALGtIb_FxC0LXm_GwOLyJAfbbUCN',
-            //user_agent: 'Your user agent',
-            //proxy: 'abc:def@12.35.56.78:4321 or 12.35.56.78:4321',
-            //type: '1', // 1 - normal, 2 - invisible, 3 - v3
-            //v3_action: '',   // v3 action
-            //v3_min_score: '0.3', // if v3, score to target
+            //user_agent: 'Your user agent', optional
+            //proxy: 'abc:def@12.35.56.78:4321 or 12.35.56.78:4321', optional
+            //type: '1', // 1 - normal, 2 - invisible, 3 - v3, optional defaults to 1
+            //v3_action: '',   // v3 action, optional
+            //v3_min_score: '0.3', // if v3, score to target, optional
+            //affiliate_id: 'ID of affiliate'       // optional
         });
     }).then(function (id) {
         captcha_id = id;
