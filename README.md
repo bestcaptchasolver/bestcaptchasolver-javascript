@@ -111,6 +111,7 @@ bestcaptchasolverapi.retrieve_captcha(id).then(function (data) { console.log(JSO
 ```
 
 This method returns an object, with the `text` attribute for image captcha or `gresponse` if submission was done for reCAPTCHA
+or `solution` for geetest and capy
 
 **If reCAPTCHA is submitted with proxy, get proxy status**
 
