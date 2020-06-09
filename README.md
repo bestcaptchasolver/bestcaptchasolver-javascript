@@ -69,6 +69,7 @@ bestcaptchasolverapi.submit_recaptcha({
     // type: '1', // 1 - normal, 2 - invisible, 3 - v3
     // v3_action: '',   // v3 action
     // v3_min_score: '0.3', // if v3, score to target
+    // data_s: 'recaptcha data-s parameter used in loading reCAPTCHA',
     // affiliate_id: 'ID of affiliate'       // optional
 }).then(function (id)) { /* use id to retrieve response */ };
 ```

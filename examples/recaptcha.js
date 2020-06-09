@@ -22,6 +22,7 @@ function example_recaptcha() {
             //type: '1', // 1 - normal, 2 - invisible, 3 - v3, optional defaults to 1
             //v3_action: '',   // v3 action, optional
             //v3_min_score: '0.3', // if v3, score to target, optional
+            //data_s: 'recaptcha data-s parameter used in loading reCAPTCHA',
             //affiliate_id: 'ID of affiliate'       // optional
         });
     }).then(function (id) {
