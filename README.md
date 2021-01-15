@@ -64,12 +64,24 @@ The `page_url` and `site_key` are the only requirements. There are other optiona
 bestcaptchasolverapi.submit_recaptcha({
     page_url: 'PAGE_URL_HERE',
     site_key: 'SITE_KEY_HERE',
+    // other parameters
+    // -------------------------------------------
+    // reCAPTCHA type(s) - optional, defaults to 1
+    // -------------------------------------------
+    // 1 - v2
+    // 2 - invisible
+    // 3 - v3
+    // 4 - enterprise v2
+    // 5 - enterprise v3
+    //
+    // type: '1',
+    //
     // user_agent: 'Your user agent',
     // proxy: 'abc:def@12.35.56.78:4321 or 12.35.56.78:4321',
-    // type: '1', // 1 - normal, 2 - invisible, 3 - v3
     // v3_action: '',   // v3 action
     // v3_min_score: '0.3', // if v3, score to target
     // data_s: 'recaptcha data-s parameter used in loading reCAPTCHA',
+    // cookie_input: 'a=b;c=d',       // used in reCAPTCHA solving, optional
     // affiliate_id: 'ID of affiliate'       // optional
 }).then(function (id)) { /* use id to retrieve response */ };
 ```
