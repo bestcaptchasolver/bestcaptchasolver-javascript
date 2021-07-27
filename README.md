@@ -93,12 +93,14 @@ to get the text or gresponse.
 - domain
 - gt
 - challenge
+- api_server (optional)
 
 ```javascript
 bestcaptchasolverapi.submit_geetest({
     domain: 'DOMAIN_HERE',
     gt: 'GT_HERE',
     challenge: 'CHALLENGE_HERE',
+    // api_server: 'GT_DOMAIN_HERE',         // optional
     // affiliate_id: 'ID of affiliate'       // optional
 }).then(function (id)) { /* use id to retrieve solution */ };
 ```
