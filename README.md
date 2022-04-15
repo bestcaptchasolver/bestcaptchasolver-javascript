@@ -105,6 +105,20 @@ bestcaptchasolverapi.submit_geetest({
 }).then(function (id)) { /* use id to retrieve solution */ };
 ```
 
+**Submit GeetestV4**
+- domain
+- captchaid
+
+**Important:** This is not the captchaid that's in our system that you receive while submitting a captcha. Gather this from HTML source of page with geetestv4 captcha, inside the `<script>` tag you'll find a link that looks like this: https://i.imgur.com/XcZd47y.png
+
+```javascript
+bestcaptchasolverapi.submit_geetest_v4({
+    domain: 'https://example.com',
+    captchaid: '647f5ed2ed8acb4be36784e01556bb71',
+    // affiliate_id: 'ID of affiliate'       // optional
+}).then(function (id)) { /* use id to retrieve solution */ };
+```
+
 **Submit Capy**
 - page_url
 - site_key
