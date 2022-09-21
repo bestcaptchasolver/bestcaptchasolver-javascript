@@ -134,12 +134,21 @@ bestcaptchasolverapi.submit_capy({
 **Submit hCaptcha**
 - page_url
 - site_key
+- invisible (optional)
+- payload (optional)
+- user_agent (optional)
+- proxy (optional)
+- affiliate_id (optional)
 
 ```javascript
 bestcaptchasolverapi.submit_hcaptcha({
     page_url: 'PAGE_URL_HERE',
     site_key: 'SITE_KEY_HERE',
-    // affiliate_id: 'ID of affiliate'       // optional
+    // invisible: 1,
+    // payload: {rqdata: 'from web requests2'},
+    // user_agent: 'your UA',
+    // proxy: '12.34.54.56:1234'
+    // affiliate_id: 'ID of affiliate'
 }).then(function (id)) { /* use id to retrieve solution */ };
 ```
 
