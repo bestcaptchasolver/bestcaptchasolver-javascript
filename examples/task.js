@@ -22,6 +22,10 @@ function example_task() {
             // proxy: '12.34.54.56:1234'
             // affiliate_id: 'ID of affiliate'
         });
+    }).then(id => {
+        // submit pushVariables while task is being solved by the worker
+        // very helpful, for e.g. in cases of 2FA authentication
+        // return bestcaptchasolverapi.task_push_variables(id, {"tfa_code": "49651"})
     }).then(function (id) {
         captcha_id = id;
         log('Got ID ' + id + ', waiting for completion ...');

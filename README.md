@@ -167,6 +167,40 @@ bestcaptchasolverapi.submit_funcaptcha({
 }).then(function (id)) { /* use id to retrieve solution */ };
 ```
 
+
+**Task**
+- template_name
+- page_url
+- variables
+- user_agent (optional)
+- proxy (optional)
+- affiliate_id (optional)
+
+```javascript
+bestcaptchasolverapi.submit_task({
+    template_name: 'Login test page',
+    page_url: 'https://bestcaptchasolver.com/automation/login',
+    variables: {"username": "xyz", "password": "0000"},
+    // user_agent: 'your UA',
+    // proxy: '12.34.54.56:1234'
+    // affiliate_id: 'ID of affiliate'
+}).then(function (id)) { /* use id to retrieve solution */ };
+```
+
+#### Task pushVariables
+Update task variables while it is being solved by the worker. Useful when dealing with data / variables, of which
+value you don't know, only after a certain step or action of the task. For example, in websites that require 2 factor
+authentication code.
+
+When the task (while running on workers machine) is getting to an action defined in the template, that requires a variable, but variable was not
+set with the task submission, it will wait until the variable is updated through push.
+
+The `bestcaptchasolver.task_push_variables(captcha_id, push_variables)` method can be used as many times as it is needed.
+
+```javascript
+bestcaptchasolverapi.task_push_variables(captcha_id, {"tfa_code": "49651"})
+```
+
 **Retrieve**
 
 Retrieval is done by passing the ID, for all captchas
