@@ -18,7 +18,9 @@ function example_funcaptcha() {
             page_url: 'https://abc.com',
             s_url: 'https://api.arkoselabs.com',
             site_key: '11111111-1111-1111-1111-111111111111',
-            // data: '{"x":"y"}',  // optional
+            // data: '{"x":"y"}',                    // optional
+            // user_agent: 'your user agent',        // optional
+            // proxy: 'user:pass@123.45.67.89:3031', // optional
             // affiliate_id: 'ID of affiliate'       // optional
         });
     }).then(function (id) {

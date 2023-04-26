@@ -17,6 +17,8 @@ function example_capy() {
         return bestcaptchasolverapi.submit_capy({
             page_url: 'PAGE_URL_HERE',
             site_key: 'SITE_KEY_HERE',
+            // user_agent: 'your user agent',        // optional
+            // proxy: 'user:pass@123.45.67.89:3031', // optional
             // affiliate_id: 'ID of affiliate'       // optional
         });
     }).then(function (id) {

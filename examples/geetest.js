@@ -19,6 +19,8 @@ function example_geetest() {
             gt: 'GT_HERE',
             challenge: 'CHALLENGE_HERE',
             // api_server: 'GT_DOMAIN_HERE',         // optional
+            // user_agent: 'your user agent',        // optional
+            // proxy: 'user:pass@123.45.67.89:3031', // optional
             // affiliate_id: 'ID of affiliate'       // optional
         });
     }).then(function (id) {

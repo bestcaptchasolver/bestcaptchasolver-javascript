@@ -17,6 +17,8 @@ function example_geetestv4() {
         return bestcaptchasolverapi.submit_geetest_v4({
             domain: 'https://example.com',
             captchaid: '647f5ed2ed8acb4be36784e01556bb71',
+            // user_agent: 'your user agent',        // optional
+            // proxy: 'user:pass@123.45.67.89:3031', // optional
             // affiliate_id: 'ID of affiliate'       // optional
         });
     }).then(function (id) {
