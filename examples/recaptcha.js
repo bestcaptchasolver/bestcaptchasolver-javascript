@@ -33,6 +33,7 @@ function example_recaptcha() {
             //proxy: 'abc:def@12.35.56.78:4321 or 12.35.56.78:4321', optional
             //v3_action: '',   // v3 action, optional
             //v3_min_score: '0.3', // if v3, score to target, optional
+            //domain: 'www.google.com',      // optional
             //data_s: 'recaptcha data-s parameter used in loading reCAPTCHA',
             //cookie_input: 'a=b;c=d',       // used in reCAPTCHA solving, optional
             //affiliate_id: 'ID of affiliate'       // optional

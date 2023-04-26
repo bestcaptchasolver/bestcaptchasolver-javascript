@@ -19,6 +19,7 @@ function example_hcaptcha() {
             site_key: 'SITE_KEY_HERE',
             // invisible: 1,
             // payload: {rqdata: 'from web requests'},
+            // domain: 'hcaptcha.com',
             // user_agent: 'your UA',
             // proxy: '12.34.54.56:1234'
             // affiliate_id: 'ID of affiliate'
