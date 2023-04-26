@@ -1,6 +1,6 @@
 {
   "name": "bestcaptchasolver-client",
-  "version": "1.1.4",
+  "version": "1.1.6",
   "description": "bestcaptchasolver-javascript is a super easy to use bypass captcha JavaScript API wrapper for bestcaptchasolver.com captcha service",
   "main": "lib/bestcaptchasolver.js",
   "scripts": {
